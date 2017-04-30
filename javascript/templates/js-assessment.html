@@ -112,8 +112,6 @@
     } 
     var button = document.getElementById('reverse-string-button');
     button.addEventListener('click', reverseString);
-
-
 </script>
 
 <h3>Sum to n</h3>
@@ -264,7 +262,6 @@
     $("#number-guessed").prop("disabled", true);
     $("#try-this-number").prop("disabled", true);
   }
-  
 </script>
 
 
@@ -338,7 +335,7 @@
             $.ajax({
                     type: "POST",
                     url: "/t-rex-attack.json",
-                    data: "t-rex-target="+trextarget,
+                    data: "attack-target="+trextarget,
                     success: function(data, textStatus, jqXHR) {
                             console.log(data);
                             //console.log(textStatus);
